@@ -92,7 +92,7 @@ const Contact = () => {
           <a href="https://www.google.com/maps/place/Department+Of+Computer+Science+and+Engineering/@13.0117582,80.2335263,17z/data=!4m7!3m6!1s0x3a52679f6aaaaaab:0x90dc1b9c54311d4b!8m2!3d13.0125764!4d80.2359838!15sChRkY3NlIGFubmEgdW5pdmVyc2l0eZIBFXVuaXZlcnNpdHlfZGVwYXJ0bWVudOABAA!16s%2Fg%2F11b7jfdnj0?shorturl=1">
         <FontAwesomeIcon icon={faMapMarkerAlt} size="2xl" /></a>
         </div>
-        <div class="location">
+        <div className="location">
           <p>CSEA</p>
           <p>CEG,Anna University</p>
           <p>Chennai.</p>
