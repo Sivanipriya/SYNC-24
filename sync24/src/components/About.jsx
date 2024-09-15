@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDay, faMedal } from '@fortawesome/free-solid-svg-icons';
-import aboutImage from '../assets/images/about.png';
+import aboutImage from '../assets/about.png';
 
 const About = () => {
     return (
