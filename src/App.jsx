@@ -7,17 +7,20 @@ function App() {
   //const [count, setCount] = useState(0)
 
   return (
-    <div className="bg--100 h-screen">
-
-    {/* //Header component - navbar
-
-    //Home page
-
-    //About
-
-    //Events */}
-    <Events />
-    {/* //Contact */}
+    <div>
+      <Header />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="events">
+        <Events />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </div>
   );
 }
