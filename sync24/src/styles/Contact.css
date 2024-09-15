@@ -76,6 +76,25 @@
     color:#888;
 }
 
+.footer{
+    font-size: 14px;
+    margin:auto;
+    color:#444444;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width:250px;
+    align-items: center;
+    margin-bottom: 50px;
+  
+}
+
+.loc {
+  
+    color:#3498db;
+}
+
+
 @media (max-width:700px)
 {
     .position{

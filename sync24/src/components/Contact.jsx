@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
-  faLinkedin,
+  faLinkedin, 
 } from "@fortawesome/free-brands-svg-icons";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/Contact.css";
 
@@ -14,71 +15,91 @@ const Contact = () => {
     <div className="section-title">
       <h2>CONTACT US</h2>
       <div className="social-links">
-       
-          <a
-            href="https://www.facebook.com/csea.ceg"
-            target="_blank"
-            rel="noopener noreferrer" className="facebook"
-          >
-            <FontAwesomeIcon icon={faFacebook} size="lg" />
-          </a>
-          <a
-            href="https://www.instagram.com/csea_ceg/"
-            target="_blank"
-            rel="noopener noreferrer" className="instagram"
-          >
-            <FontAwesomeIcon icon={faInstagram} size="lg" />
-          </a>
-        
-          <a
-            href="https://www.linkedin.com/company/csea-ceg/"
-            target="_blank"
-            rel="noopener noreferrer" className="linkedin"
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="lg" />
-          </a>
-        
+        <a
+          href="https://www.facebook.com/csea.ceg"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="facebook"
+        >
+          <FontAwesomeIcon icon={faFacebook} size="lg" />
+        </a>
+        <a
+          href="https://www.instagram.com/csea_ceg/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="instagram"
+        >
+          <FontAwesomeIcon icon={faInstagram} size="lg" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/csea-ceg/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="linkedin"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="lg" />
+        </a>
       </div>
       <div className="position">
         <div className="individual item1">
-          <p className="male_chair">Sunil Kumar</p>
+          <p className="male_chair">
+            <a href="https://www.linkedin.com/in/sunilsk17/" target="_blank" rel="noopener noreferrer">
+              Sunil Kumar
+            </a>
+          </p>
           <a href="mailto:chairman@abacus.org.in">chairman@abacus.org.in</a>
         </div>
         <div className="individual item2">
-          <p className="female_chair">Smrithi Prakash</p>
+          <p className="female_chair">
+            <a href="https://www.linkedin.com/in/smrithi-prakash/" target="_blank" rel="noopener noreferrer">
+              Smrithi Prakash
+            </a>
+          </p>
           <a href="mailto:chairman@abacus.org.in">chairman@abacus.org.in</a>
         </div>
         <div className="individual item3">
-          <p className="male_vicechair">Padmasharan B</p>
+          <p className="male_vicechair">
+            <a href="https://www.linkedin.com/in/padmasharan-b/" target="_blank" rel="noopener noreferrer">
+              Padmasharan B
+            </a>
+          </p>
           <a href="mailto:vicechairman@abacus.org.in">
             vicechairman@abacus.org.in
           </a>
         </div>
         <div className="individual item4">
-          <p className="female_vicechar">Varsha B</p>
+          <p className="female_vicechar">
+            <a href="https://www.linkedin.com/in/varsha-b/" target="_blank" rel="noopener noreferrer">
+              Varsha B
+            </a>
+          </p>
           <a href="mailto:vicechairman@abacus.org.in">
             vicechairman@abacus.org.in
           </a>
         </div>
         <div className="individual item5">
-          <p className="generalsec">Nikhil Prasanna</p>
+          <p className="generalsec">
+            <a href="https://www.linkedin.com/in/nikhil03a/" target="_blank" rel="noopener noreferrer">
+              Nikhil Prasanna
+            </a>
+          </p>
           <a href="mailto:generalsecretary@abacus.org.in">
             generalsecretary@abacus.org.in
           </a>
         </div>
       </div>
-      <div className="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3887.375266247932!2d80.2335263!3d13.0117582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679f6aaaaaab%3A0x90dc1b9c54311d4b!2sDepartment%20Of%20Computer%20Science%20and%20Engineering!5e0!3m2!1sen!2sin!4v1726378568939!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          style={{ border: "0" }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Map"
-        ></iframe>
-      </div>
+      <div className="footer">
+        <div className="loc">
+          <a href="https://www.google.com/maps/place/Department+Of+Computer+Science+and+Engineering/@13.0117582,80.2335263,17z/data=!4m7!3m6!1s0x3a52679f6aaaaaab:0x90dc1b9c54311d4b!8m2!3d13.0125764!4d80.2359838!15sChRkY3NlIGFubmEgdW5pdmVyc2l0eZIBFXVuaXZlcnNpdHlfZGVwYXJ0bWVudOABAA!16s%2Fg%2F11b7jfdnj0?shorturl=1">
+        <FontAwesomeIcon icon={faMapMarkerAlt} size="2xl" /></a>
+        </div>
+        <div class="location">
+          <p>CSEA</p>
+          <p>CEG,Anna University</p>
+          <p>Chennai.</p>
+        </div>
+        </div>
+      
     </div>
   );
 };
