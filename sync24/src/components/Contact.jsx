@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
         <div className="individual item2">
           <p className="female_chair">
-            <a href="https://www.linkedin.com/in/smrithi-prakash/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/smrithi-prakash-b2962a282" target="_blank" rel="noopener noreferrer">
               Smrithi Prakash
             </a>
           </p>
@@ -59,7 +59,7 @@ const Contact = () => {
         </div>
         <div className="individual item3">
           <p className="male_vicechair">
-            <a href="https://www.linkedin.com/in/padmasharan-b/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/padmasharan-b-9b117122a/" target="_blank" rel="noopener noreferrer">
               Padmasharan B
             </a>
           </p>
@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
         <div className="individual item4">
           <p className="female_vicechar">
-            <a href="https://www.linkedin.com/in/varsha-b/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/varshacse/" target="_blank" rel="noopener noreferrer">
               Varsha B
             </a>
           </p>
