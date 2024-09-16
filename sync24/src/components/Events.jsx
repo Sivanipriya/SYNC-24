@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Using react-icons for arrow
-import OLPC_pre from "../../images/coding.png";
-import cricket from "../../images/cricket.png";
-import code_queen from "../../images/crown.png";
-import django from "../../images/django.png";
-import quiz from "../../images/entertainment.png";
-import helloworld from "../../images/helloworld.png";
-import meme from "../../images/meme-ify.png";
-import knivesout from "../../images/knivesout.png";
-import snap from "../../images/snap.png";
-import league from "../../images/images.jpeg";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import OLPC_pre from "../images/coding.png";
+import cricket from "../images/cricket.png";
+import code_queen from "../images/crown.png";
+import django from "../images/django.png";
+import quiz from "../images/entertainment.png";
+import helloworld from "../images/helloworld.png";
+import meme from "../images/meme-ify.png";
+import knivesout from "../images/knivesout.png";
+import snap from "../images/snap.png";
+import league from "../images/images.jpeg";
 
 const events = [
   {
@@ -279,7 +279,7 @@ const Events = () => {
                   key={index}
                   className="bg-white p-4 mx-3 my-4 shadow-lg rounded-lg w-[31%] mx-auto mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
                 >
-                    <div className="absolute top-0 right-0 w-[10%] h-[14%] bg-sky-100 rounded-bl-full"></div>
+                  <div className="absolute top-0 right-0 w-[10%] h-[14%] bg-sky-100 rounded-bl-full"></div>
 
                   <img
                     src={event.image}
