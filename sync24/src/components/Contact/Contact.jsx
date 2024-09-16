@@ -7,7 +7,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
-import "../styles/Contact.css";
+//import "../../styles/Contact.css";
+import "./Contact.css";
 
 const Contact = () => {
   return (

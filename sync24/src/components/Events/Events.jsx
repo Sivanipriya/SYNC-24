@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import OLPC_pre from "../images/coding.png";
-import cricket from "../images/cricket.png";
-import code_queen from "../images/crown.png";
-import django from "../images/django.png";
-import quiz from "../images/entertainment.png";
-import helloworld from "../images/helloworld.png";
-import meme from "../images/meme-ify.png";
-import knivesout from "../images/knivesout.png";
-import snap from "../images/snap.png";
-import league from "../images/images.jpeg";
+import OLPC_pre from "../../images/coding.png";
+import cricket from "../../images/cricket.png";
+import code_queen from "../../images/crown.png";
+import django from "../../images/django.png";
+import quiz from "../../images/entertainment.png";
+import helloworld from "../../images/helloworld.png";
+import meme from "../../images/meme-ify.png";
+import knivesout from "../../images/knivesout.png";
+import snap from "../../images/snap.png";
+import league from "../../images/images.jpeg";
 
 const events = [
   {
@@ -131,7 +131,6 @@ const Events = () => {
   const [workshop, SetWorkshop] = useState(false);
   const [selectedDate, setSelectedDate] = useState("");
   const [eventsForSelectedDate, setEventsForSelectedDate] = useState([]);
-
   const handleDateEvents = (date) => {
     if (selectedDate === date) {
       setSelectedDate("");
@@ -159,7 +158,7 @@ const Events = () => {
     events.find((eventType) => eventType.event_type === "workshops")?.events ||
     [];
   return (
-    <div className="">
+    <div className="my-[7%]">
       <div className="flex flex-row justify-center items-center">
         <div className="w-12 h-[2.5px] bg-sky-600"></div>
         <div className="flex justify-center text-center font-semibold text-4xl py-3  mx-2">
@@ -172,10 +171,15 @@ const Events = () => {
         <h2>Event Dates</h2>
         <p>Event Scheduled for two days</p>
         <p
-          className="bg-gray-300 p-1 rounded-md m-1 px-3 hover:cursor-pointer hover:bg-gray-400"
+          className="flex flex-row items-center bg-gray-300 p-1 rounded-md m-1 px-3 hover:cursor-pointer hover:bg-gray-400"
           onClick={() => handleDateEvents("September 27 2024")}
         >
           Day-1:<span className="font-normal">September 27 2024</span>
+          {selectedDate && selectedDate === "September 27 2024" ? (
+            <FaChevronUp className="text-sky-500 ml-2" />
+          ) : (
+            <FaChevronDown className="text-sky-500 ml-2" />
+          )}
         </p>
         {selectedDate === "September 27 2024" && (
           <div className="flex flex-col justify-center items-center">
@@ -190,10 +194,15 @@ const Events = () => {
           </div>
         )}
         <p
-          className="bg-gray-300 p-1 rounded-md m-1 px-3 hover:cursor-pointer hover:bg-gray-400"
+          className="flex flex-row items-center bg-gray-300 p-1 rounded-md m-1 px-3 hover:cursor-pointer hover:bg-gray-400"
           onClick={() => handleDateEvents("September 28 2024")}
         >
           Day-2:<span className="font-normal">September 28 2024</span>
+          {selectedDate && selectedDate === "September 28 2024" ? (
+            <FaChevronUp className="text-sky-500 ml-2" />
+          ) : (
+            <FaChevronDown className="text-sky-500 ml-2" />
+          )}
         </p>
         {selectedDate === "September 28 2024" && (
           <div className="flex flex-col justify-center items-center">
@@ -211,11 +220,15 @@ const Events = () => {
       <div className="flex flex-col justify-center py-3">
         <div className="flex flex-col items-center ">
           <button
-            className="text-xl w-[20%] py-3 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 hover:scale-105"
+            className="text-xl w-[20%] hover:border-gray-700 py-3 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 hover:scale-105"
             onClick={handleTech}
           >
             Tech
-            {tech ? <FaChevronUp /> : <FaChevronDown />}
+            {tech ? (
+              <FaChevronUp className="text-sky-500" />
+            ) : (
+              <FaChevronDown className="text-sky-500" />
+            )}
           </button>
           <div className="flex flex-row flex-wrap">
             {tech &&
@@ -266,11 +279,15 @@ const Events = () => {
 
         <div className="flex flex-col items-center">
           <button
-            className="text-xl w-[20%] py-3 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105"
+            className="text-xl w-[20%] py-3 hover:border-gray-700 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105"
             onClick={handleNonTech}
           >
             Non-Tech
-            {nonTech ? <FaChevronUp /> : <FaChevronDown />}
+            {nonTech ? (
+              <FaChevronUp className="text-sky-500" />
+            ) : (
+              <FaChevronDown className="text-sky-500" />
+            )}
           </button>
           <div className="flex flex-row ">
             {nonTech &&
@@ -322,11 +339,15 @@ const Events = () => {
 
         <div className="flex flex-col items-center ">
           <button
-            className="text-xl w-[20%] py-3 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 hover:scale-105"
+            className="text-xl w-[20%] hover:border-gray-700 py-3 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 hover:scale-105"
             onClick={handleWorkshop}
           >
             Workshops
-            {workshop ? <FaChevronUp /> : <FaChevronDown />}
+            {workshop ? (
+              <FaChevronUp className="text-sky-500" />
+            ) : (
+              <FaChevronDown className="text-sky-500" />
+            )}
           </button>
           <div className="flex flex-row ">
             {workshop &&

@@ -1,0 +1,189 @@
+.about-container {
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-title {
+    font-size: 2em;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 0;
+}
+
+.about-header::before,
+.about-header::after {
+    content: '';
+    display: inline-block;
+    width: 1.5cm;
+    height: 3px;
+    background-color: rgb(0, 149, 255);
+    position: relative;
+    top: 50%;
+}
+
+.about-header::before {
+    margin-right: 1px;
+}
+
+.about-header::after {
+    margin-left: 1px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 10px;
+}
+
+.about-extra {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.about-image {
+    width: 450px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.extra-items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.extra-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5rem;
+    max-width: 300px;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.icon-heading-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.extra-item h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+.extra-item .heading-line {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.extra-item p {
+    margin: 0 40px;
+    padding: 0;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.extra-item p.bold {
+    font-weight: bold;
+}
+
+.extra-icon {
+    font-size: 2rem;
+    color: rgb(0, 149, 255);
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 1.5em;
+    }
+
+    .extra-item h3 {
+        font-size: 24px;
+    }
+
+    .extra-item p {
+        margin: 0 20px;
+        font-size: 0.9rem;
+    }
+
+    .about-extra {
+        padding: 0.5rem;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+}
+
+/* For screens up to 650px */
+@media (max-width: 650px) {
+    .about-content {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .about-extra {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .about-image {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .extra-items {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .extra-item {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .extra-item h3 {
+        font-size: 29px;
+    }
+
+    .extra-item p {
+        margin: 0 40px;
+        font-size: 0.95rem;
+    }
+
+    .about-title {
+        font-size: 29px;
+    }
+}
