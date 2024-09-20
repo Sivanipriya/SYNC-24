@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import OLPC_pre from "../../images/coding.png";
 import cricket from "../../images/cricket.png";
@@ -10,6 +10,8 @@ import meme from "../../images/meme-ify.png";
 import knivesout from "../../images/knivesout.png";
 import snap from "../../images/snap.png";
 import league from "../../images/images.jpeg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const events = [
   {
@@ -131,6 +133,11 @@ const Events = () => {
   const [workshop, SetWorkshop] = useState(false);
   const [selectedDate, setSelectedDate] = useState("");
   const [eventsForSelectedDate, setEventsForSelectedDate] = useState([]);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const handleDateEvents = (date) => {
     if (selectedDate === date) {
       setSelectedDate("");
@@ -158,8 +165,11 @@ const Events = () => {
     events.find((eventType) => eventType.event_type === "workshops")?.events ||
     [];
   return (
-    <div className="my-[7%]">
-      <div className="flex flex-row justify-center items-center">
+    <div className="my-[7%]" data-aos="fade-up">
+      <div
+        className="flex flex-row justify-center items-center "
+        data-aos="fade-up"
+      >
         <div className="w-12 h-[2.5px] bg-sky-600"></div>
         <div className="flex justify-center text-center font-semibold text-4xl py-3  mx-2">
           EVENTS
@@ -167,14 +177,16 @@ const Events = () => {
         <div className="w-12 h-[2.5px] bg-sky-600 "></div>
       </div>
 
-      <div className="flex flex-col justify-center font-bold items-center py-6  bg-gray-100 w-[20%] mx-auto rounded-lg">
-        <h2>Event Dates</h2>
-        <p>Event Scheduled for two days</p>
+      <div className="flex flex-col justify-center font-bold items-center py-6  bg-gray-100 w-[80%] lg:w-[30%] mx-auto rounded-lg">
+        <h2 className="text-sm lg:text-2xl md:text-2xl">Event Dates</h2>
+        <p className="text-sm lg:text-xl md:text-xl">
+          Event Scheduled for two days
+        </p>
         <p
-          className="flex flex-row items-center bg-gray-300 p-1 rounded-md m-1 px-3 hover:cursor-pointer hover:bg-gray-400"
+          className="flex flex-row text-md lg:text-xl md:text-xl items-center bg-gray-300 p-1 rounded-md m-1 px-3 hover:cursor-pointer hover:bg-gray-400"
           onClick={() => handleDateEvents("September 27 2024")}
         >
-          Day-1:<span className="font-normal">September 27 2024</span>
+          Day-1:<span className="font-normal ">September 27 2024</span>
           {selectedDate && selectedDate === "September 27 2024" ? (
             <FaChevronUp className="text-sky-500 ml-2" />
           ) : (
@@ -182,19 +194,21 @@ const Events = () => {
           )}
         </p>
         {selectedDate === "September 27 2024" && (
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center  ">
             {eventsForSelectedDate.map((event, index) => (
               <div
                 key={index}
                 className="bg-gray-200 w-[80%]  p-2 rounded-md m-1"
               >
-                <p>{event.name}</p>
+                <p className="font-semibold text-sm lg:text-xl md:text-xl">
+                  {event.name}
+                </p>
               </div>
             ))}
           </div>
         )}
         <p
-          className="flex flex-row items-center bg-gray-300 p-1 rounded-md m-1 px-3 hover:cursor-pointer hover:bg-gray-400"
+          className="flex lg:text-xl md:text-xl text-md flex-row items-center bg-gray-300 p-1 rounded-md m-1 px-3 hover:cursor-pointer hover:bg-gray-400"
           onClick={() => handleDateEvents("September 28 2024")}
         >
           Day-2:<span className="font-normal">September 28 2024</span>
@@ -211,17 +225,20 @@ const Events = () => {
                 key={index}
                 className="bg-gray-200 w-[80%] items-center  p-2 rounded-md m-1"
               >
-                <p>{event.name}</p>
+                <p className="font-semibold text-sm lg:text-xl md:text-xl">
+                  {event.name}
+                </p>
               </div>
             ))}
           </div>
         )}
       </div>
       <div className="flex flex-col justify-center py-3">
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center " data-aos="fade-up">
           <button
-            className="text-xl w-[20%] hover:border-gray-700 py-3 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 hover:scale-105"
+            className="text-xl w-[50%] lg:w-[20%] md:w-[50%] hover:border-gray-700 py-3 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 hover:scale-105"
             onClick={handleTech}
+            
           >
             Tech
             {tech ? (
@@ -230,12 +247,13 @@ const Events = () => {
               <FaChevronDown className="text-sky-500" />
             )}
           </button>
-          <div className="flex flex-row flex-wrap">
+          <div className="flex flex-col md:flex-row flex-wrap">
             {tech &&
               techEvents.map((event, index) => (
                 <div
                   key={index}
-                  className="bg-white p-4 mx-3 my-4 shadow-lg rounded-lg w-[31%] mx-auto mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                  className="bg-white p-4 mx-3 my-4 shadow-lg rounded-lg lg:w-[31%] md:w-[47%] w-[95%] h-[30%] lg:h-[90%] mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-200"
+                  data-aos="fade-up"               
                 >
                   <div className="absolute top-0 right-0 w-[10%] h-[14%] bg-sky-100 rounded-bl-full"></div>
                   <img
@@ -277,9 +295,9 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center " data-aos="fade-up">
           <button
-            className="text-xl w-[20%] py-3 hover:border-gray-700 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105"
+            className="text-xl w-[50%] lg:w-[20%] md:w-[50%] py-3 hover:border-gray-700 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105"
             onClick={handleNonTech}
           >
             Non-Tech
@@ -289,12 +307,13 @@ const Events = () => {
               <FaChevronDown className="text-sky-500" />
             )}
           </button>
-          <div className="flex flex-row ">
+          <div className="flex flex-col md:flex-row flex-wrap ">
             {nonTech &&
               nonTechEvents.map((event, index) => (
                 <div
                   key={index}
-                  className="bg-white p-4 mx-3 my-4 shadow-lg rounded-lg w-[31%] mx-auto mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                  className="bg-white p-4 mx-3 my-4 shadow-lg rounded-lg lg:w-[31%] md:w-[45%] w-[95%] h-[30%] lg:h-[90%] mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-200"
+                  data-aos="fade-up"
                 >
                   <div className="absolute top-0 right-0 w-[10%] h-[14%] bg-sky-100 rounded-bl-full"></div>
 
@@ -337,9 +356,12 @@ const Events = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center ">
+        <div
+          className="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+        >
           <button
-            className="text-xl w-[20%] hover:border-gray-700 py-3 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 hover:scale-105"
+            className="text-xl w-[50%] lg:w-[20%] md:w-[50%] py-3 hover:border-gray-700 bg-gray-300 text-center rounded-lg flex items-center justify-between px-4 hover:bg-gray-400 transition relative group duration-300 ease-in-out mx-auto my-1.5 mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105"
             onClick={handleWorkshop}
           >
             Workshops
@@ -349,18 +371,20 @@ const Events = () => {
               <FaChevronDown className="text-sky-500" />
             )}
           </button>
-          <div className="flex flex-row ">
+          <div className="flex flex-col md:flex-row flex-wrap ">
             {workshop &&
               workshops.map((event, index) => (
                 <div
                   key={index}
-                  className="bg-white p-4 mx-3 my-4 shadow-lg rounded-lg w-[31%] mx-auto mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                  className="bg-white p-4 mx-3 my-4 shadow-lg rounded-lg lg:w-[31%] md:w-[45%] w-[95%] h-[30%] lg:h-[90%] mx-auto transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-200"
+                  data-aos="fade-up"
                 >
                   <div className="absolute top-0 right-0 w-[10%] h-[14%] bg-sky-100 rounded-bl-full"></div>
+
                   <img
                     src={event.image}
                     alt={event.name}
-                    className="w-[25%] h-20 rounded-lg mb-4 object-contain"
+                    className="w-[20%] h-22 object-contain rounded-lg mb-4"
                   />
                   <h4 className="font-bold">{event.name}</h4>
                   <p>{event.desc}</p>
