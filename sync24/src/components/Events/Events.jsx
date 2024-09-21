@@ -134,8 +134,12 @@ const Events = () => {
   const [selectedDate, setSelectedDate] = useState("");
   const [eventsForSelectedDate, setEventsForSelectedDate] = useState([]);
 
-    AOS.init({ duration: 1000 });
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,  
+    });
+  }, []);
   const handleDateEvents = (date) => {
     if (selectedDate === date) {
       setSelectedDate("");
@@ -162,14 +166,17 @@ const Events = () => {
   const workshops =
     events.find((eventType) => eventType.event_type === "workshops")?.events ||
     [];
+
+    
+
   return (
-    <div className="my-[7%]" data-aos="fade-up">
+    <div className="mb-[5%] text-[#222222]" data-aos="fade-up">
       <div
-        className="flex flex-row justify-center items-center "
+        className="flex flex-row justify-center items-center my-[1%]"
         data-aos="fade-up"
       >
         <div className="w-12 h-[2.5px] bg-sky-600"></div>
-        <div className="flex justify-center text-center font-semibold text-4xl py-3  mx-2">
+        <div className="flex justify-center text-center font-bold text-4xl py-3 mx-2 text-[#222222]">
           EVENTS
         </div>
         <div className="w-12 h-[2.5px] bg-sky-600 "></div>
