@@ -20,7 +20,7 @@ const Contact = () => {
     });
 
  
-    sr.reveal('.social-links, .position', { interval: 200 });
+    sr.reveal('.social-links,.header, .position', { interval: 200 });
 
    
     sr.reveal('.footer', {
@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <div className="section-title">
-      <h2>CONTACT US</h2>
+      <h2 className="header">CONTACT US</h2>
       <div className="social-links">
         <a
           href="https://www.facebook.com/csea.ceg"
