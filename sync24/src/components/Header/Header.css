@@ -5,11 +5,18 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
+    padding:0;
+    margin:0;
+
+  }
+  .logoname h1 a{
+    color: #3498db;
   }
   
   a {
     color: #3498db;
     text-decoration: none;
+
   }
   
   a:hover {
@@ -27,11 +34,14 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0px auto;
+
   }
 
 
   #header{
-    
+       position: fixed;
+    z-index: 1000;
+    width:100%;
     margin: 0 auto;
   }
 

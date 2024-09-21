@@ -47,7 +47,7 @@ const Header = () => {
           <ul>
             <li><a className="nav-link scrollto active" href="#hero"><b>Home</b></a></li>
             <li><a className="nav-link scrollto" href="#about"><b>About</b></a></li>
-            <li><a className="nav-link scrollto" href="#services"><b>Events</b></a></li>
+            <li><a className="nav-link scrollto" href="#events"><b>Events</b></a></li>
             <li><a className="nav-link scrollto" href="#contact"><b>Contact</b></a></li>
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
