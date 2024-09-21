@@ -134,9 +134,7 @@ const Events = () => {
   const [selectedDate, setSelectedDate] = useState("");
   const [eventsForSelectedDate, setEventsForSelectedDate] = useState([]);
 
-  useEffect(() => {
     AOS.init({ duration: 1000 });
-  }, []);
 
   const handleDateEvents = (date) => {
     if (selectedDate === date) {
