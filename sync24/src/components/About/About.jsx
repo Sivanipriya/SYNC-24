@@ -35,7 +35,7 @@ const About = () => {
                     <p>Sync is an intra-college symposium hosted by the Department of Computer Science. It is conducted with the notion of aggrandizing the intellect and kindling the passion for computer science in budding engineers. Sync promotes inter-department collaboration and interdisciplinary activities. Apart from technical events, it focuses on other nontechnical events to maintain the perfect equilibrium between tech and non-tech events.</p>
                 </div>
                 <div className="about-text">
-                    <p>This year, we have decided to have the events around Digital Well-being. Sync ‘23 is about to blossom afresh on 17th and 18th of October, 2023. Encompassing multifarious events, this version has the benchmark features to enthrall the multitude, albeit in a sustainable manner. Every experience brings a greater clarity of vision and thus with the past experiences, Sync ‘23 is all set to reach further horizons.</p>
+                    <p>This year, we have decided to have the events around Digital Well-being. Sync ‘24 is about to blossom afresh on 27th and 28th of September, 2024. Encompassing multifarious events, this version has the benchmark features to enthrall the multitude, albeit in a sustainable manner. Every experience brings a greater clarity of vision and thus with the past experiences, Sync ‘24 is all set to reach further horizons.</p>
                 </div>
             </div>
             <div className="about-extra">
@@ -44,7 +44,7 @@ const About = () => {
                     <div className="extra-item">
                         <div className="icon-heading-container">
                             <FontAwesomeIcon icon={faCalendarDay} className="extra-icon" />
-                            <h3>13+ Events</h3>
+                            <h3>15+ Events</h3>
                         </div>
                         <p className='bold'>Experience..Expertise..Everytime</p>
                         <p>Come and participate in the exceptional tech and non-tech events...</p>
