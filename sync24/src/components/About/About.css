@@ -153,13 +153,19 @@
     }
 
     .extra-item {
-        max-width: 100%;
+      width: 100%;
+        background-color: aqua;
         text-align: center;
+    }
+    .extra-item h3{
+        width:100%;
+        background-color: black;
     }
 }
 
 /* Mobile View (Up to 767px) */
 @media (max-width: 767px) {
+    ,
     .about-title {
         font-size: 1.5em;
     }
