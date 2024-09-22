@@ -372,7 +372,9 @@ body {
       animation: none;
     }
     #hero .hero-img {
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     #hero .hero-img img {
       width: 50%;
@@ -400,6 +402,7 @@ body {
       width: 80%;
     }
   }
+ 
   
   @-webkit-keyframes up-down {
     0% {
