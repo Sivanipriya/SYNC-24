@@ -20,6 +20,7 @@ import knivesout from "../../images/knives_out.png";
 import kquiz from "../../images/quiz.png"
 import snap from "../../images/snap.png";
 import league from "../../images/images.jpeg";
+import blockchain from "../../images/blockchain.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -31,6 +32,8 @@ const events = [
         image: OLPC_pre,
         name: "OLPC (Pre-Event)",
         desc: "In the realm of online programming contests, OLPC stands as a high-stakes battleground where swift minds race against the digital clock, tackling intricate challenges woven with complexities in data structures and algorithms.",
+        prize: "Rs.1500/-",
+        participation: "Individual",
         Date: "September 26 2024",
         Time: "06:00 PM to 08:00 PM",
         link: "",
@@ -43,6 +46,8 @@ const events = [
         image: OLPC_pre,
         name: "OSPC",
         desc: "It's a fast-paced programming contest, where the innovative minds come together to resolve challenges in the most complicated coding questions, involving data structures and algorithms.",
+        prize: "Rs.2500/-",
+        participation: "Team of size 3",
         Date: "September 27 2024",
         Time: "09:30 AM to 4:00 PM",
         link: "",
@@ -55,6 +60,8 @@ const events = [
         image: helloworld,
         name: "Hello World!",
         desc: "The event is aimed at introducing the newbies to logical reasoning, arithmetic, and programming concepts. The questions will be assessing their critical thinking rather than their hardcore programming knowledge.",
+        prize: "Rs.2000/-",
+        participation: "Individual",
         Date: "September 27 2024",
         Time: "09:30 AM to 12:30 PM",
         link: "",
@@ -67,6 +74,8 @@ const events = [
         image: designlab360,
         name: "DesignLab 360",
         desc: "Participants unleash their creativity by designing a cutting-edge web frontend and bring their designs to life by coding them into functional, interactive working web pages. Showcase skills in both design and development.",
+        prize: "Rs.2000/-",
+        participation: "Team of size 2",
         Date: "September 27 2024",
         Time: "09:30 AM to 12:30 PM",
         link: "",
@@ -79,6 +88,8 @@ const events = [
         image: reverse_coding,
         name: "Reverse Coding",
         desc: "Decipher the underlying code logic to reconstruct the original algorithm. Sharpen your problem-solving skills as you decode, debug, and deliver the solution in this unique coding battle!",
+        prize: "Rs.2000/-",
+        participation: "Team of size 2",
         Date: "September 28 2024",
         Time: "09:30 AM to 12:30 PM",
         link: "",
@@ -91,6 +102,8 @@ const events = [
         image: code_bingo,
         name: "Code Bingo",
         desc: "Step into the captivating world of Coding, an exhilarating coding adventure where each code challenge is a stepping stone in your journey, unlocking the secrets of the next thrilling quest!",
+        prize: "Rs.2000/-",
+        participation: "Team of size 2",
         Date: "September 28 2024",
         Time: "09:30 AM to 12:30 PM",
         link: "",
@@ -103,6 +116,8 @@ const events = [
         image: techxpress,
         name: "TechXpress",
         desc: "Step into the captivating world of Coding, an exhilarating coding adventure where each code challenge is a stepping stone in your journey, unlocking the secrets of the next thrilling quest!",
+        prize: "Rs.2000/-",
+        participation: "Team of size 3",
         Date: "September 28 2024",
         Time: "09:30 AM to 12:30 PM",
         link: "",
@@ -115,6 +130,8 @@ const events = [
         image: techxpress,
         name: "SYNC - CSAU",
         desc: "Step into the captivating world of Coding, an exhilarating coding adventure where each code challenge is a stepping stone in your journey, unlocking the secrets of the next thrilling quest!",
+        prize: "Rs.2000/-",
+        participation: "Team of size 3",
         Date: "September 28 2024",
         Time: "09:30 AM to 12:30 PM",
         link: "",
@@ -152,13 +169,13 @@ const events = [
         Time: "08:00 PM to 09:30 PM",
         link: "",
         Contact: [
-          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
           { coord: "Harini S ", contact: "9363349994" },
+          { coord: "Renjitha K ", contact: "7907854731" },
         ],
       },
       {
         image: cricket,
-        name: "Cricket (Pre-Event)",
+        name: "Cricket Championship'24 (Pre-Event)",
         desc: "Cricket is a thrilling showdown where strategy meets endurance in an exciting tournament! Teams will compete in fast-paced matches, showcasing their batting, bowling, and fielding skills to dominate the pitch and claim victory.",
         participation: "Team",
         prize: "Rs.1000/-",
@@ -166,8 +183,8 @@ const events = [
         Time: "08:00 PM to 09:30 PM",
         link: "",
         Contact: [
-          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Harini S ", contact: "9363349994" },
+          { coord: "Dinesh S", contact: "9360380769" },
+          { coord: "Hariharan A", contact: "7708462392" },
         ],
       },
       {
@@ -246,15 +263,15 @@ const events = [
     event_type: "workshops",
     events: [
       {
-        image: django,
-        name: "Building and Scaling Applications using Python Django (Python) [Workshop]",
-        desc: "Explore the world of application building and scaling with Python Django in this event. Unleash the power of Python for robust and scalable applications!",
+        image: blockchain,
+        name: "Build dapps on Ethereum Blockchain [Workshop]",
+        desc: "Join our hands-on workshop designed for enthusiasts looking to dive into blockchain development! Bring your laptop, and get ready to build decentralized applications (DApps) on Ethereum. Participants who successfully complete the workshop will receive exciting swag, including a T-shirt or hoodie!",
         Date: "September 28 2024",
-        Time: "8 PM to 9:30 PM",
+        Time: "10:00 AM to 04:00 PM",
         link: "",
         Contact: [
-          { coord: "aaa", contact: "987654321" },
-          { coord: "bbb", contact: "987654322" },
+          { coord: "Poojaa S ", contact: "7558121642" },
+          { coord: "Ragul S ", contact: "9361469631" },
         ],
       },
     ],
@@ -406,6 +423,13 @@ const Events = () => {
                   />
                   <h4 className="font-bold">{event.name}</h4>
                   <p>{event.desc}</p>
+                  <hr className="my-4 border-t border-gray-300" />
+                  <p>
+                    <span className="font-bold">Prize Pool</span>: {event.prize}
+                  </p>
+                  <p>
+                    <span className="font-bold">Participation</span>: {event.participation}
+                  </p>
                   <hr className="my-4 border-t border-gray-300" />
                   <p>
                     <span className="font-bold">Date</span>: {event.Date}
