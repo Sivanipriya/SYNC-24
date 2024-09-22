@@ -32,6 +32,7 @@ const Contact = () => {
   return (
     <div className="section-title">
       <h2 className="header">CONTACT US</h2>
+      <br></br>
       <div className="social-links">
         <a
           href="https://www.facebook.com/csea.ceg"

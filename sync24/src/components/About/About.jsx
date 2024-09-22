@@ -27,12 +27,12 @@ const About = () => {
 
     return (
         <div className="about-container">
-           <div className="about-header">
-    <span className="line"></span> {/* Line before */}
-    <h1 className="about-title">ABOUT</h1>
-    <span className="line"></span> {/* Line after */}
-</div>
-
+            <div className="about-header">
+                <span className="line"></span> {/* Line before */}
+                <h1 className="about-title">ABOUT</h1>
+                <span className="line"></span> {/* Line after */}
+            </div>
+            <br></br>
             <div className="about-content">
                 <div className="about-text">
                     <p>Sync is an intra-college symposium hosted by the Department of Computer Science. It is conducted with the notion of aggrandizing the intellect and kindling the passion for computer science in budding engineers. Sync promotes inter-department collaboration and interdisciplinary activities. Apart from technical events, it focuses on other nontechnical events to maintain the perfect equilibrium between tech and non-tech events.</p>

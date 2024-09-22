@@ -44,7 +44,7 @@ const Header = () => {
       <div className="navContainer container d-flex align-items-center justify-content-between">
         {/* Logo Name */}
         <div className="logo-name">
-          <a href="../">
+          <a href="https://cseaceg.org.in/">
             <img
               src={cseaBlack}
               alt="CSEA"
