@@ -304,7 +304,8 @@ const Events = () => {
     
 
   return (
-   <div className="mb-[5%] text-[#222222]" 
+    <div 
+    className="mb-[5%] text-[#222222]" 
     data-aos="fade-up" 
     style={{ minHeight: '100vh', paddingTop: '100px' }}
   >
