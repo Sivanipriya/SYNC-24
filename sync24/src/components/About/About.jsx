@@ -47,7 +47,7 @@ const About = () => {
                     <div className="extra-item">
                         <div className="icon-heading-container">
                             <FontAwesomeIcon icon={faCalendarDay} className="extra-icon" />
-                            <h3>13+ Events</h3>
+                            <h3>15+ Events</h3>
                         </div>
                         <p className='bold'>Experience..Expertise..Everytime</p>
                         <p>Come and participate in the exceptional tech and non-tech events...</p>

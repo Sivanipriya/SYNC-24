@@ -7,9 +7,9 @@ const Home = () => {
       <div className="">
         <div className="HomeFlex">
           <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up" className="aos-init aos-animate">Sync '23</h1>
+            <h1 data-aos="fade-up" className="aos-init aos-animate">Sync '24</h1>
             <h2 data-aos="fade-up" data-aos-delay="400" className="aos-init aos-animate">
-              17th and 18th October, 2023
+              27th and 28th September, 2024
             </h2>
             <div data-aos="fade-up" data-aos-delay="800" className="aos-init aos-animate">
               <h2>Disconnect 🔌 to Reconnect ✨</h2>
