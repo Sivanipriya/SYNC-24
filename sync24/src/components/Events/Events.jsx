@@ -125,7 +125,7 @@ const events = [
       {
         image: sqlcsau,
         name: "The SQL Sleuth - Crack the case",
-        desc: "Deciphering and solving the SQL queries in Hackerrank. Also includes Escape room where SQL queries helps passing through rooms and murder mystery challenges based on quering tables.",
+        desc: "\"The SQL SLEUTH\" invites teams to decrypt, query, and solve in this multi-layered exciting event. Crack encrypted SQL queries, escape rooms using problem-solving expertise and uncover the truth in a murder mystery.",
         prize: "Rs.2000/-",
         participation: "Team of size 2",
         Date: "September 28 2024",
