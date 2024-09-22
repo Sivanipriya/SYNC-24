@@ -15,6 +15,7 @@ import helloworld from "../../images/helloworld.png";
 import knivesout from "../../images/knives_out.png";
 import kquiz from "../../images/quiz.png"
 import blockchain from "../../images/blockchain.png"
+import sqlcsau from "../../images/sqlcsau.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -46,8 +47,8 @@ const events = [
         Time: "09:30 AM to 4:00 PM",
         link: "",
         Contact: [
-          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Infancy P ", contact: "9047366527" },
+          { coord: "Hariharan A ", contact: "7708462392" },
+          { coord: "Deepak S ", contact: "6380156548" },
         ],
       },
       {
@@ -61,7 +62,7 @@ const events = [
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Infancy P ", contact: "9047366527" },
+          { coord: "Renjitha K ", contact: "7907854731" },
         ],
       },    
       {
@@ -74,23 +75,23 @@ const events = [
         Time: "09:30 AM to 12:30 PM",
         link: "",
         Contact: [
-          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
           { coord: "Infancy P ", contact: "9047366527" },
+          { coord: "Sreenithika S ", contact: "9965065777" },
         ],
       },
       
       {
         image: techxpress,
         name: "TechXpress",
-        desc: "Step into the captivating world of Coding, an exhilarating coding adventure where each code challenge is a stepping stone in your journey, unlocking the secrets of the next thrilling quest!",
+        desc: "TechXpress is an exciting tech challenge that tests participants' problem-solving skills, technical knowledge, and teamwork. Compete in a series of thrilling rounds, starting with a MCQ and Puzzles round.",
         prize: "Rs.2000/-",
         participation: "Team of size 2 - 3",
         Date: "September 27 2024",
         Time: "09:30 AM to 12:30 PM",
         link: "",
         Contact: [
-          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Infancy P ", contact: "9047366527" },
+          { coord: "Anagha ", contact: "8825789933" },
+          { coord: "Dinesh S ", contact: "9360380769" },
         ],
       },     
       {
@@ -104,7 +105,7 @@ const events = [
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Infancy P ", contact: "9047366527" },
+          { coord: "Dinesh S ", contact: "9360380769" },
         ],
       },
       {
@@ -117,22 +118,22 @@ const events = [
         Time: "09:30 AM to 12:30 PM",
         link: "",
         Contact: [
-          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Infancy P ", contact: "9047366527" },
+          { coord: "Sreenithika S ", contact: "9965065777" },
+          { coord: "Ahalya V S ", contact: "9444499090" },
         ],
       }, 
       {
-        image: techxpress,
-        name: "SYNC - CSAU",
-        desc: "Step into the captivating world of Coding, an exhilarating coding adventure where each code challenge is a stepping stone in your journey, unlocking the secrets of the next thrilling quest!",
+        image: sqlcsau,
+        name: "The SQL Sleuth - Crack the case",
+        desc: "Deciphering and solving the SQL queries in Hackerrank. Also includes Escape room where SQL queries helps passing through rooms and murder mystery challenges based on quering tables.",
         prize: "Rs.2000/-",
-        participation: "Team of size 3",
+        participation: "Team of size 2",
         Date: "September 28 2024",
         Time: "09:30 AM to 12:30 PM",
         link: "",
         Contact: [
+          { coord: "Nivedha B ", contact: "7604963610" },
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Infancy P ", contact: "9047366527" },
         ],
       },
     ],
@@ -146,8 +147,8 @@ const events = [
         desc: "Cricket is a thrilling showdown where strategy meets endurance in an exciting tournament! Teams will compete in fast-paced matches, showcasing their batting, bowling, and fielding skills to dominate the pitch and claim victory.",
         participation: "Team",
         prize: "Rs.1000/-",
-        Date: "September 24 2024",
-        Time: "08:00 PM to 09:30 PM",
+        Date: "From September 24 2024",
+        Time: "-",
         link: "",
         Contact: [
           { coord: "Dinesh S", contact: "9360380769" },
@@ -160,8 +161,8 @@ const events = [
         desc: "A thrilling badminton showdown where skill meets strategy in separate tournaments for only girls! Compete in fast-paced matches to showcase your agility and precision, and aim for the top spot on the podium.",
         participation: "Individual",
         prize: "Rs.1000/-",
-        Date: "September 25 2024",
-        Time: "08:00 PM to 09:30 PM",
+        Date: "From September 25 2024",
+        Time: "04:00 PM",
         link: "",
         Contact: [
           { coord: "Harini S ", contact: "9363349994" },
@@ -207,7 +208,7 @@ const events = [
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Harini S ", contact: "9363349994" },
+          { coord: "Sahana S ", contact: "9363349994" },
         ],
       },
       {
@@ -220,7 +221,7 @@ const events = [
         Time: "09:30 AM to 12:30 PM",
         link: "",
         Contact: [
-          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
+          { coord: "Infancy P ", contact: "9047366527" },
           { coord: "Harini S ", contact: "9363349994" },
         ],
       },
@@ -235,7 +236,7 @@ const events = [
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Harini S ", contact: "9363349994" },
+          { coord: "Sreenithika S ", contact: "9965065777" },
         ],
       },
       {
@@ -248,8 +249,8 @@ const events = [
         Time: "10:00 AM to 03:30 PM",
         link: "",
         Contact: [
-          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Harini S ", contact: "9363349994" },
+          { coord: "Renjitha K ", contact: "7907854731" },
+          { coord: "Sahana S ", contact: "9363349994" },
         ],
       },
     ],
@@ -263,6 +264,7 @@ const events = [
         desc: "Join our hands-on workshop designed for enthusiasts looking to dive into blockchain development! Bring your laptop, and get ready to build decentralized applications (DApps) on Ethereum. Participants who successfully complete the workshop will receive exciting swag, including a T-shirt or hoodie!",
         Date: "September 28 2024",
         Time: "10:00 AM to 04:00 PM",
+        Speaker: "Chaal Pritam from Web3Chennai",
         link: "",
         Contact: [
           { coord: "Poojaa S ", contact: "7558121642" },
@@ -554,7 +556,10 @@ const Events = () => {
                     className="w-[20%] h-22 object-contain rounded-lg mb-4"
                   />
                   <h4 className="font-black">{event.name}</h4>
-                  <p>{event.desc}</p>
+                  <p>{event.desc}</p><br></br>
+                  <p>
+                    <span className="font-bold">Speaker</span>: {event.Speaker}
+                  </p>
                   <hr className="my-4 border-t border-gray-300" />
                   <p>
                     <span className="font-bold">Date</span>: {event.Date}
