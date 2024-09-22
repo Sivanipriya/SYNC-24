@@ -304,7 +304,10 @@ const Events = () => {
     
 
   return (
-    <div className="mb-[5%] text-[#222222]" data-aos="fade-up">
+   <div className="mb-[5%] text-[#222222]" 
+    data-aos="fade-up" 
+    style={{ minHeight: '100vh', paddingTop: '100px' }}
+  >
       <div
         className="flex flex-row justify-center items-center my-[1%]"
         data-aos="fade-up"

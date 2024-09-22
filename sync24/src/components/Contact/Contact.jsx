@@ -25,7 +25,7 @@ const Contact = () => {
    
     sr.reveal('.footer', {
       delay: 1000, 
-      duration: 2000
+      duration: 1000
     });
   }, []);
 
