@@ -3,7 +3,7 @@
 .about-container {
     padding: 20px;
     max-width: 90%;
-    padding-top:100px;
+    padding-top:90px;
     
     margin: 0 auto;
 }
@@ -27,6 +27,8 @@
     z-index: 1;
     padding: 0 0;
 }
+
+ 
 
 .about-content {
     display: flex;
@@ -108,18 +110,6 @@
 .extra-item p.bold {
     font-weight: bold;
 }
-.about-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.line {
-    width: 1.5cm;
-    height: 3px;
-    background-color: rgb(0, 149, 255);
-    margin: 0 1px; /* Adjust margin as needed */
-}
 
 .extra-icon {
     font-size: 2rem;
@@ -133,7 +123,7 @@
         align-items: center;
         gap: 20px;
     }
-
+   
     .about-image {
         width: 350px;
         margin-bottom: 1rem;
@@ -225,12 +215,14 @@
     }
 
     .extra-item {
-        max-width: 100%;
+        width: 100%;
         /* text-align: center; */
     }
 
     .extra-item h3 {
         font-size: 22px;
+        width:400px;
+        display: flex;
     }
 
     .extra-item p {
@@ -295,8 +287,7 @@
     }
 
     .extra-item h3 {
-    display: flex;
-    width:400px;
+        font-size: 29px;
     }
 
     .extra-item p {
@@ -307,4 +298,21 @@
     .about-title {
         font-size: 29px;
     }
+}
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Required for absolute positioning of lines */
+}
+
+.line {
+    width: 1.5cm;
+    height: 3px;
+    background-color: rgb(0, 149, 255);
+    margin: 0 1px; /* Adjust margin as needed */
+}
+
+.about-title {
+    margin: 0 10px; /* Add some spacing between title and lines */
 }
