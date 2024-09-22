@@ -165,7 +165,7 @@
 
 /* Mobile View (Up to 767px) */
 @media (max-width: 767px) {
-    ,
+    
     .about-title {
         font-size: 1.5em;
     }
