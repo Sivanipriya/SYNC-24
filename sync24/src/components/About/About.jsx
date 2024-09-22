@@ -56,7 +56,7 @@ const About = () => {
                         <div className="icon-heading-container">
                             <FontAwesomeIcon icon={faMedal} className="extra-icon" />
                             <h3>
-                                ₹20,000+
+                                ₹25,000+
                                 <span className="heading-line">Worth Cash</span>
                                 <span className="heading-line">Prizes</span>
                             </h3>
