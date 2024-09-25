@@ -208,7 +208,7 @@ const events = [
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Sahana S ", contact: "9363349994" },
+          { coord: "Sahana S ", contact: "7418247031" },
         ],
       },
       {
@@ -250,7 +250,7 @@ const events = [
         link: "",
         Contact: [
           { coord: "Renjitha K ", contact: "7907854731" },
-          { coord: "Sahana S ", contact: "9363349994" },
+          { coord: "Sahana S ", contact: "7418247031" },
         ],
       },
     ],
