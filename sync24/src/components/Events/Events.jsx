@@ -31,6 +31,7 @@ const events = [
         participation: "Individual",
         Date: "September 26 2024",
         Time: "06:00 PM to 08:00 PM",
+        Venue: "-",
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
@@ -44,7 +45,8 @@ const events = [
         prize: "Rs.2500/-",
         participation: "Team of size 3",
         Date: "September 27 2024",
-        Time: "09:30 AM to 4:00 PM",
+        Time: "10:00 AM to 04:00 PM",
+        Venue: "R1, DCSE",
         link: "",
         Contact: [
           { coord: "Hariharan A ", contact: "7708462392" },
@@ -58,7 +60,8 @@ const events = [
         prize: "Rs.2000/-",
         participation: "Individual",
         Date: "September 27 2024",
-        Time: "09:30 AM to 12:30 PM",
+        Time: "10:00 AM to 01:00 PM",
+        Venue: "RUSA Gallery, KP",
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
@@ -72,7 +75,8 @@ const events = [
         prize: "Rs.2000/-",
         participation: "Team of size 2",
         Date: "September 27 2024",
-        Time: "09:30 AM to 12:30 PM",
+        Time: "10:00 AM to 01:00 PM",
+        Venue: "GFL, DCSE",
         link: "",
         Contact: [
           { coord: "Infancy P ", contact: "9047366527" },
@@ -87,7 +91,8 @@ const events = [
         prize: "Rs.2000/-",
         participation: "Team of size 2 - 3",
         Date: "September 27 2024",
-        Time: "09:30 AM to 12:30 PM",
+        Time: "10:00 AM to 01:00 PM",
+        Venue: "SFL, DCSE",
         link: "",
         Contact: [
           { coord: "Anagha ", contact: "8825789933" },
@@ -102,6 +107,7 @@ const events = [
         participation: "Team of size 2",
         Date: "September 28 2024",
         Time: "09:30 AM to 12:30 PM",
+        Venue: "GFL, DCSE",
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
@@ -116,6 +122,7 @@ const events = [
         participation: "Team of size 2",
         Date: "September 28 2024",
         Time: "09:30 AM to 12:30 PM",
+        Venue: "RUSA Gallery, KP",
         link: "",
         Contact: [
           { coord: "Sreenithika S ", contact: "9965065777" },
@@ -130,6 +137,7 @@ const events = [
         participation: "Team of size 2",
         Date: "September 28 2024",
         Time: "09:30 AM to 12:30 PM",
+        Venue: "SFL, DCSE",
         link: "",
         Contact: [
           { coord: "Nivedha B ", contact: "7604963610" },
@@ -149,6 +157,7 @@ const events = [
         prize: "Rs.1000/-",
         Date: "From September 24 2024",
         Time: "-",
+        Venue: "CEG Ground",
         link: "",
         Contact: [
           { coord: "Dinesh S", contact: "9360380769" },
@@ -163,6 +172,7 @@ const events = [
         prize: "Rs.1000/-",
         Date: "From September 25 2024",
         Time: "04:00 PM",
+        Venue: "-",
         link: "",
         Contact: [
           { coord: "Harini S ", contact: "9363349994" },
@@ -177,6 +187,7 @@ const events = [
         prize: "Rs.1000/-",
         Date: "Till September 27 2024",
         Time: "-",
+        Venue: "-",
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
@@ -190,11 +201,27 @@ const events = [
         participation: "Individual",
         prize: "Rs.1000/-",
         Date: "September 27 2024",
-        Time: "09:30 AM to 12:30 PM",
+        Time: "10:00 AM to 01:00 PM",
+        Venue: "Turing Hall, DCSE",
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
           { coord: "Harini S ", contact: "9363349994" },
+        ],
+      },
+      {
+        image: family_feud,
+        name: "Family Feud",
+        desc: "Put your skills to test on topics like Food, Technology, Movies, Lifestyle, and more!  Can your team guess the most popular answers to survey questions and win the title of Family Feud Champions? ",
+        participation: "Team of size 5",
+        prize: "Rs.1500/-",
+        Date: "September 27 2024",
+        Time: "10:30 AM to 04:00 PM",
+        Venue: "R2, DCSE",
+        link: "",
+        Contact: [
+          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
+          { coord: "Sreenithika S ", contact: "9965065777" },
         ],
       },
       {
@@ -203,8 +230,9 @@ const events = [
         desc: "Step into the ultimate test of wits and teamwork with our Knives Out  Challenge! Teams must unravel a web of clues, solve intricate puzzles, and uncover hidden secrets to solve the crime and find the murderer.",
         participation: "Team of size 2",
         prize: "Rs.1000/-",
-        Date: "September 27 2024",
-        Time: "10:30 AM to 5:00 PM",
+        Date: "September 28 2024",
+        Time: "10:30 AM to 04:00 PM",
+        Venue: "R2, DCSE",
         link: "",
         Contact: [
           { coord: "Ajai Krishna T.S ", contact: "7010707652" },
@@ -219,24 +247,11 @@ const events = [
         prize: "Rs.1000/-",
         Date: "September 28 2024",
         Time: "09:30 AM to 12:30 PM",
+        Venue: "R1, DCSE",
         link: "",
         Contact: [
           { coord: "Infancy P ", contact: "9047366527" },
           { coord: "Harini S ", contact: "9363349994" },
-        ],
-      },
-      {
-        image: family_feud,
-        name: "Family Feud",
-        desc: "Put your skills to test on topics like Food, Technology, Movies, Lifestyle, and more!  Can your team guess the most popular answers to survey questions and win the title of Family Feud Champions? ",
-        participation: "Team of size 5",
-        prize: "Rs.1500/-",
-        Date: "September 28 2024",
-        Time: "09:30 AM to 03:00 PM",
-        link: "",
-        Contact: [
-          { coord: "Ajai Krishna T.S ", contact: "7010707652" },
-          { coord: "Sreenithika S ", contact: "9965065777" },
         ],
       },
       {
@@ -246,7 +261,8 @@ const events = [
         participation: "Team of size 3",
         prize: "Rs.1000/-",
         Date: "September 28 2024",
-        Time: "10:00 AM to 03:30 PM",
+        Time: "10:30 AM to 04:00 PM",
+        Venue: "Registration Desk, infront of DCSE",
         link: "",
         Contact: [
           { coord: "Renjitha K ", contact: "7907854731" },
@@ -264,6 +280,7 @@ const events = [
         desc: "Join our hands-on workshop designed for enthusiasts looking to dive into blockchain development! Bring your laptop, and get ready to build decentralized applications (DApps) on Ethereum. Participants who successfully complete the workshop will receive exciting swag, including a T-shirt or hoodie!",
         Date: "September 28 2024",
         Time: "10:00 AM to 04:00 PM",
+        Venue: "Turing Hall, DCSE",
         Speaker: "Chaal Pritam from Web3Chennai",
         link: "",
         Contact: [
@@ -427,6 +444,9 @@ const Events = () => {
                   </p>
                   <hr className="my-4 border-t border-gray-300" />
                   <p>
+                    <span className="font-bold">Venue</span>: {event.Venue}
+                  </p>
+                  <p>
                     <span className="font-bold">Date</span>: {event.Date}
                   </p>
                   <p>
@@ -495,6 +515,9 @@ const Events = () => {
                   </p>
                   <hr className="my-4 border-t border-gray-300" />
                   <p>
+                    <span className="font-bold">Venue</span>: {event.Venue}
+                  </p>
+                  <p>
                     <span className="font-bold">Date</span>: {event.Date}
                   </p>
                   <p>
@@ -561,6 +584,9 @@ const Events = () => {
                     <span className="font-bold">Speaker</span>: {event.Speaker}
                   </p>
                   <hr className="my-4 border-t border-gray-300" />
+                  <p>
+                    <span className="font-bold">Venue</span>: {event.Venue}
+                  </p>
                   <p>
                     <span className="font-bold">Date</span>: {event.Date}
                   </p>
