@@ -199,7 +199,7 @@ const events = [
       },
       {
         image: knivesout,
-        name: "Knives-out",
+        name: "Escape from Reality",
         desc: "Step into the ultimate test of wits and teamwork with our Knives Out  Challenge! Teams must unravel a web of clues, solve intricate puzzles, and uncover hidden secrets to solve the crime and find the murderer.",
         participation: "Team of size 2",
         prize: "Rs.1000/-",
